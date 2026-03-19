@@ -28,7 +28,7 @@ export default function WidgetGrid({ editable = false }: Props) {
       rowHeight={80}
       isDraggable={editable}
       isResizable={editable}
-      onLayoutChange={(currentLayout, allLayouts) => {
+      onLayoutChange={(_currentLayout, allLayouts) => {
         if (editable) {
           Object.entries(allLayouts).forEach(([bp, l]) => updateLayout(bp, l));
         }

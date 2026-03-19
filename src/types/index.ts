@@ -41,6 +41,7 @@ export interface DashboardLayout {
   lg: GridItem[];
   md: GridItem[];
   sm: GridItem[];
+  [key: string]: GridItem[];
 }
 
 export interface BaseWidgetConfig {
