@@ -1,0 +1,25 @@
+{
+  "name": "dashboard-server",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.2",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "@types/cors": "^2.8.17",
+    "@types/uuid": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "nodemon": "^3.1.7"
+  }
+}
